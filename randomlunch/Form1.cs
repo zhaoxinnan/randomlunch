@@ -70,7 +70,10 @@ namespace randomlunch
             string a="";
             for(int i = 0; i < obj.Length; i++)
             {
+                if (i != 0)
+                {
                 a += "，";
+                }
                 a += obj[i];
             }
             label1.Text = a;
